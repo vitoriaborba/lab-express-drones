@@ -7,16 +7,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{title}}</title>
     <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Montserrat+Alternates:wght@300&display=swap" rel="stylesheet">
   </head>
 
-  <body>
-    <a href="/">Home</a>
-    <a href="/drones">Show all Drones</a>
-    <a href="/drones/create">Create a Drone</a>
-
+  <body> 
+    <nav class="nav-bar">
+      <ul class="nav-bar-ul">
+        <li><a class="nav-bar-item" href="/">HOME</a></li>
+        <li> <a class="nav-bar-item" href="/drones">DRONE'S LIBRARY</a></li> 
+        <li><a class="nav-bar-item" href="/drones/create">CREATE A NEW ONE</a></li>
+      </ul>
+    </nav>
     {{{body}}}
 
     <script src="/js/script.js"></script>
+    <footer>
+      <p>Welcome to {{title}}</p>
+    </footer>
   </body>
 
 </html>
